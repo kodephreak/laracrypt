@@ -1,7 +1,7 @@
 """
 Tested on Python 3.6
 Installing Dependencies:
-    pip install pycryptodome, phpserialize
+    pip install pycryptodome phpserialize
 
 """
 

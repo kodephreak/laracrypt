@@ -28,7 +28,7 @@ plain_text = lc.decrypt("Laravel encrypted string")
 
 Install the dependencies with the following command
 ```commandline
-pip install pycryptodome, phpserialize
+pip install pycryptodome phpserialize
 ```
 
 
