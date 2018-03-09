@@ -58,9 +58,7 @@ class LaraCrypt:
         iv = base64.b64encode(iv)
         mac = self._hash(iv, value)
 
-        return base64.b64encode(bytes(json.dumps({
-            'iv': iv.decode(), 'value': value.decode(), 'mac': mac
-        }), "utf-8"))
+        return base64.b64encode(json.dumps({'iv': iv.decode(), 'value': value.decode(), 'mac': mac}).encode("utf-8"))
 
     def decrypt(self, payload, unserialize=True):
         """
